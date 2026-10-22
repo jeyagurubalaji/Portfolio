@@ -38,8 +38,8 @@ const projects = [
   {
     title: "True Detective – FakeNewsDetector",
     description:
-      "A multi-modal fact-checking engine supporting real-time news claim verification, live web search corroboration, automated OCR image and video frame analysis, clickbait sensationalism metering, and downloadable PDF audit reporting.",
-    tags: ["Python", "Scikit-learn", "Pipeline", "ML"],
+      "A multi-modal fact-checking engine supporting real-time news claim verification, live web search corroboration, automated OCR image and video frame analysis, clickbait sensationalism metering, Developed SHAP-style model explainability dashboards displaying top token weights alongside downloadable PDF audit reporting.",
+    tags: ["Python", "Scikit-learn", "Streamlit", "PyTesseract"],
     githubUrl: "https://github.com/jeyagurubalaji/TrueDetective-FakeNewsDetector",
     liveUrl: "https://truedetective.streamlit.app",
   },
