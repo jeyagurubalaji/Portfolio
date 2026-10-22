@@ -11,13 +11,13 @@ const highlights = [
     icon: Code2,
     title: "Full Stack Developer",
     description:
-      "Experienced in building full-stack applications with modern technologies.",
+      "Experienced in designing and building scalable full-stack web and mobile applications using Java, Spring Boot, React.js, Flutter,Express js and MongoDB with secure RESTful APIs.",
   },
   {
     icon: Brain,
     title: "AI & Machine Learning",
     description:
-      "Passionate about designing, training, and deploying intelligent models and NLP engines to solve complex real-world problems.",
+      "Specializing in Natural Language Processing (NLP), semantic vector matching, model explainability (SHAP), and real-time inference pipelines using Python, scikit-learn, XGBoost, and FastAPI.",
   },
   {
     icon: Lightbulb,
