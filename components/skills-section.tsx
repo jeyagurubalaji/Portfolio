@@ -1,4 +1,4 @@
-import { Code2, Database, BarChart3, Globe, Smartphone, Cpu } from "lucide-react"
+import { Code2, Database, BarChart3, Globe, Smartphone, Cpu, Brain } from "lucide-react"
 
 const skillCategories = [
   {
@@ -14,7 +14,12 @@ const skillCategories = [
   {
     icon: BarChart3,
     title: "Data Science",
-    skills: ["NumPy", "Pandas", "Scikit-learn"],
+    skills: ["NumPy", "Pandas", "Scikit-learn", "XGBoost"],
+  },
+  {
+    icon: Brain,
+    title: "AI & Machine Learning",
+    skills: ["NLP", "TF-IDF & N-grams", "SHAP Explainability", "FastAPI", "PyTesseract OCR"],
   },
   {
     icon: Globe,
