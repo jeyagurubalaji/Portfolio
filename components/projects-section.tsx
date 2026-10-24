@@ -30,7 +30,7 @@ const projects = [
   {
     title: "MovieTime – Movie Discovery & Recommendation Hub",
     description:
-      "Built a feature-packed cinema discovery platform delivering real-time trending updates, custom watchlist libraries, interactive games, and seamless multi-language accessibility.",
+      "Built a feature-packed cinema discovery platform delivering real-time trending updates, AI-driven personalized recommendations, interactive rating predictions with score breakdowns, custom watchlist libraries, interactive games and seamless multi-language accessibility.",
     tags: ["React", "MongoDB", "SpringBoot"],
     githubUrl: "https://github.com/jeyagurubalaji/MovieTime-MovieRecommendationHub",
     liveUrl: "https://movietimehub.vercel.app",
