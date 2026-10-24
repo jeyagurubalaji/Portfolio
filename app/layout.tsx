@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: 'Jeyagurubalaji | Aspiring Data Scientist',
   description:
     'Portfolio of Jeyagurubalaji - Computer Science student focused on building data-driven solutions using Python, SQL, and Machine Learning.',
+  icons: {
+    icon: '/portfolio.png', // <--- Added favicon path here
+  },
 }
 
 export const viewport: Viewport = {
