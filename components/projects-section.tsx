@@ -41,7 +41,8 @@ const projects = [
       "A multi-modal fact-checking engine supporting real-time news claim verification, live web search corroboration, automated OCR image and video frame analysis, clickbait sensationalism metering, Developed SHAP-style model explainability dashboards displaying top token weights alongside downloadable PDF audit reporting.",
     tags: ["Python", "Scikit-learn", "Streamlit", "PyTesseract"],
     githubUrl: "https://github.com/jeyagurubalaji/TrueDetective-FakeNewsDetector",
-    liveUrl: "https://truedetective.streamlit.app",
+    liveurl-render: "https://truedetective-kw11.onrender.com",
+    liveUrl-streamlit: "https://truedetective.streamlit.app",
   },
 ]
 
