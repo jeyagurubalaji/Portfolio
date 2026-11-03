@@ -16,7 +16,7 @@ const projects = [
     tags: ["Dart", "Express", "MongoDB"],
     githubUrl: "https://github.com/jeyagurubalaji/FarukFashion-E-Commerce-App",
     liveUrl: "https://farukfashion-app.vercel.app",
-    apkUrl: "/FarukFashion.apk", // Points directly to public/FarukFashion.apk
+    apkUrl: "/FarukFashion.apk",
   },
   {
     title: "Campus Cleaning – Duty Management & Verification System",
@@ -25,7 +25,7 @@ const projects = [
     tags: ["Dart", "Express", "MongoDB"],
     githubUrl: "https://github.com/jeyagurubalaji/CampusCleaning-DutyManagementApp",
     liveUrl: "https://campuscleaning.vercel.app",
-    apkUrl: "/CampusCleaning.apk", // Points directly to public/CampusCleaning.apk
+    apkUrl: "/CampusCleaning.apk",
   },
   {
     title: "MovieTime – Movie Discovery & Recommendation Hub",
@@ -41,8 +41,8 @@ const projects = [
       "A multi-modal fact-checking engine supporting real-time news claim verification, live web search corroboration, automated OCR image and video frame analysis, clickbait sensationalism metering, Developed SHAP-style model explainability dashboards displaying top token weights alongside downloadable PDF audit reporting.",
     tags: ["Python", "Scikit-learn", "Streamlit", "PyTesseract"],
     githubUrl: "https://github.com/jeyagurubalaji/TrueDetective-FakeNewsDetector",
-    liveurl-render: "https://truedetective-kw11.onrender.com",
-    liveUrl-streamlit: "https://truedetective.streamlit.app",
+    liveUrlRender: "https://truedetective-kw11.onrender.com",
+    liveUrlStreamlit: "https://truedetective.streamlit.app",
   },
 ]
 
@@ -83,27 +83,55 @@ export default function ProjectsSection() {
                   </span>
                 ))}
               </div>
-              <div className="mt-6 flex items-center gap-4 border-t border-border pt-5">
-                <a
-                  href={project.githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-primary"
-                  aria-label={`GitHub repository for ${project.title}`}
-                >
-                  <Github className="h-4 w-4" />
-                  GitHub
-                </a>
-                <a
-                  href={project.liveUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-primary"
-                  aria-label={`Live demo for ${project.title}`}
-                >
-                  <ExternalLink className="h-4 w-4" />
-                  Live Demo
-                </a>
+              <div className="mt-6 flex flex-wrap items-center gap-4 border-t border-border pt-5">
+                {project.githubUrl && (
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-primary"
+                    aria-label={`GitHub repository for ${project.title}`}
+                  >
+                    <Github className="h-4 w-4" />
+                    GitHub
+                  </a>
+                )}
+                {project.liveUrl && (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-primary"
+                    aria-label={`Live demo for ${project.title}`}
+                  >
+                    <ExternalLink className="h-4 w-4" />
+                    Live Demo
+                  </a>
+                )}
+                {project.liveUrlStreamlit && (
+                  <a
+                    href={project.liveUrlStreamlit}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-primary"
+                    aria-label={`Streamlit app for ${project.title}`}
+                  >
+                    <ExternalLink className="h-4 w-4" />
+                    Streamlit
+                  </a>
+                )}
+                {project.liveUrlRender && (
+                  <a
+                    href={project.liveUrlRender}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-primary"
+                    aria-label={`Render live app for ${project.title}`}
+                  >
+                    <ExternalLink className="h-4 w-4" />
+                    Render
+                  </a>
+                )}
                 {project.apkUrl && (
                   <a
                     href={project.apkUrl}
